@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
