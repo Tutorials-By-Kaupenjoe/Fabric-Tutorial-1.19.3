@@ -1,0 +1,4 @@
+// 1.19.3	2023-02-08T15:21:04.7996412	Tutorial Mod/Block Loot Tables
+55fcafc81ea69031942b617bbbb4c671b48f621d data\tutorialmod\loot_tables\blocks\citrine_ore.json
+b734ec02622b01a878af7dc20883f4bb2b3560d7 data\tutorialmod\loot_tables\blocks\deepslate_citrine_ore.json
+3d0e05e2764d92826dda80a8b929c51fca3c3993 data\tutorialmod\loot_tables\blocks\citrine_block.json

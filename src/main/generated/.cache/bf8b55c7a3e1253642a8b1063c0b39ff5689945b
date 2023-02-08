@@ -1,0 +1,12 @@
+// 1.19.3	2023-02-08T15:21:04.8016403	Tutorial Mod/Model Definitions
+905fdd1c47200eeb1d06e1ab414e6adaa23b0192 assets\tutorialmod\blockstates\citrine_ore.json
+d826b21c769567f3faf6a28a32fdd9ea0264a87e assets\tutorialmod\models\item\deepslate_citrine_ore.json
+a5cff33b82334a88f9a0e5519a7dfd29c9c40873 assets\tutorialmod\models\block\deepslate_citrine_ore.json
+77a23e0b6b27de6f41984f29d275679a02edee05 assets\tutorialmod\models\item\citrine_block.json
+70b078e3f44e9da1b2818778d96a2d8eca5bba9e assets\tutorialmod\models\block\citrine_block.json
+f23b96bf875fc2dc0fdaa8fff458aa773911a657 assets\tutorialmod\blockstates\citrine_block.json
+9cc9e2803269a3c3a80a484777e7637ab6240e46 assets\tutorialmod\models\block\citrine_ore.json
+b0b62ff437694e8e9d233c55e693c60dd05091e7 assets\tutorialmod\models\item\citrine_ore.json
+dcc8f3e207d4b9799b13aa25ffdf66517f357c0f assets\tutorialmod\models\item\citrine.json
+16751d1ac2fceb6d541d0e76773e985d0401510d assets\tutorialmod\blockstates\deepslate_citrine_ore.json
+3e796b71891cee1eda36e92075132316327173ec assets\tutorialmod\models\item\raw_citrine.json

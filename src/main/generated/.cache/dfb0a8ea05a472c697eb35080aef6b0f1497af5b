@@ -1,0 +1,9 @@
+// 1.19.3	2023-02-08T15:21:04.8016403	Tutorial Mod/Recipes
+6f407b253ba7fb1ea2db5671f96c6dad97d2d14f data\tutorialmod\recipes\citrine_from_smelting_raw_citrine.json
+b1cadce1d5041b5059ea7dff310db28511cc3fc1 data\tutorialmod\recipes\citrine.json
+b49d909428f35227ba8814ba8cfd8b9bc28abbf4 data\tutorialmod\advancements\recipes\misc\raw_citrine.json
+23111f807926091a8f8a28dd2e28f1631aaf5192 data\tutorialmod\advancements\recipes\misc\citrine_from_smelting_raw_citrine.json
+d372f8d2b7ed1987e61f12f0977f6f2df647945b data\tutorialmod\recipes\citrine_block.json
+cedcdf1a6b172e1a39108811e1c57be7181788b5 data\tutorialmod\recipes\raw_citrine.json
+06e0ad02363c211f1db0a513d87c0ad58989cf00 data\tutorialmod\advancements\recipes\decorations\citrine_block.json
+70f942d15509f969161c27218c666d3769356d5b data\tutorialmod\advancements\recipes\building_blocks\citrine.json
