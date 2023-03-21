@@ -1,4 +1,4 @@
-// 1.19.3	2023-02-18T09:49:03.7038909	Tutorial Mod/Model Definitions
+// 1.19.4	2023-03-21T15:13:45.1652751	Tutorial Mod/Model Definitions
 d826b21c769567f3faf6a28a32fdd9ea0264a87e assets\tutorialmod\models\item\deepslate_citrine_ore.json
 bbd5828f2423a983ccc33d19bcb2f9ce1b55f6a6 assets\tutorialmod\blockstates\stripped_red_maple_log.json
 b6f3353e82772b125681867a1408e3c3df76fd37 assets\tutorialmod\models\block\red_maple_log_horizontal.json
@@ -10,6 +10,7 @@ b0b62ff437694e8e9d233c55e693c60dd05091e7 assets\tutorialmod\models\item\citrine_
 60341853c9dc4e4a3e52af9a28109b8147b4cd87 assets\tutorialmod\blockstates\red_maple_log.json
 a8a79945287029f6a1829346ef2de8b9ab4df87c assets\tutorialmod\models\block\red_maple_planks.json
 905fdd1c47200eeb1d06e1ab414e6adaa23b0192 assets\tutorialmod\blockstates\citrine_ore.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\tutorialmod\models\item\tiger_spawn_egg.json
 70b078e3f44e9da1b2818778d96a2d8eca5bba9e assets\tutorialmod\models\block\citrine_block.json
 9d98ce7bc3e58597565b937b92d99aa5e63d29b5 assets\tutorialmod\blockstates\red_maple_leaves.json
 45897c8f3a086e0ebed153cc0cf8923282f29033 assets\tutorialmod\models\block\stripped_red_maple_wood.json
@@ -23,8 +24,8 @@ a8a79945287029f6a1829346ef2de8b9ab4df87c assets\tutorialmod\models\block\red_map
 9cc9e2803269a3c3a80a484777e7637ab6240e46 assets\tutorialmod\models\block\citrine_ore.json
 6bc1c4bd7fb216b333b9b066aff35ce9c2984bf2 assets\tutorialmod\models\block\red_maple_log.json
 a5cff33b82334a88f9a0e5519a7dfd29c9c40873 assets\tutorialmod\models\block\deepslate_citrine_ore.json
-05ffa751138c6d3d368ae0e9e9aa4e89986284c9 assets\tutorialmod\models\item\red_maple_planks.json
 139491f5045ba6f59dfc1fa73323b6f743aeb64c assets\tutorialmod\models\block\red_maple_sapling.json
+05ffa751138c6d3d368ae0e9e9aa4e89986284c9 assets\tutorialmod\models\item\red_maple_planks.json
 3e796b71891cee1eda36e92075132316327173ec assets\tutorialmod\models\item\raw_citrine.json
 bf9544de25a918b3b73a54c868e563d3f0d1babf assets\tutorialmod\models\item\red_maple_log.json
 5d37bb8a621de452b0f214b0970d5ad3815c7ee0 assets\tutorialmod\models\item\stripped_red_maple_wood.json

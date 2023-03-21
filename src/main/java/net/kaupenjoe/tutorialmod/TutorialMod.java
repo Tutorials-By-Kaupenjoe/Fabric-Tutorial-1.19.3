@@ -2,10 +2,13 @@ package net.kaupenjoe.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.block.ModFlammableBlockRegistry;
+import net.kaupenjoe.tutorialmod.entity.ModEntities;
+import net.kaupenjoe.tutorialmod.entity.custom.TigerEntity;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.world.gen.ModWorldGeneration;
@@ -36,9 +39,10 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();
 
-
 		ModFlammableBlockRegistry.registerFlammableBlocks();
 		StrippableBlockRegistry.register(ModBlocks.RED_MAPLE_LOG, ModBlocks.STRIPPED_RED_MAPLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.RED_MAPLE_WOOD, ModBlocks.STRIPPED_RED_MAPLE_WOOD);
+
+		FabricDefaultAttributeRegistry.register(ModEntities.TIGER, TigerEntity.setAttributes());
 	}
 }

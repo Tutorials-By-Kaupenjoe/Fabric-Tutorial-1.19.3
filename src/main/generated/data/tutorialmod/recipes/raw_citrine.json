@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "tutorialmod:raw_citrine"
-  }
+  },
+  "show_notification": true
 }
