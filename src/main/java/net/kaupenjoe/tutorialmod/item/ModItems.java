@@ -3,7 +3,9 @@ package net.kaupenjoe.tutorialmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.tutorialmod.TutorialMod;
+import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.entity.ModEntities;
+import net.kaupenjoe.tutorialmod.item.custom.AnimatedBlockItem;
 import net.kaupenjoe.tutorialmod.item.custom.AnimatedItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -26,6 +28,9 @@ public class ModItems {
     public static final Item ANIMATED_ITEM = registerItem("animated_item",
             new AnimatedItem(new FabricItemSettings()));
 
+    public static final Item ANIMATED_BLOCK_ITEM = registerItem("animated_block",
+            new AnimatedBlockItem(ModBlocks.ANIMATED_BLOCK, new FabricItemSettings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
@@ -38,6 +43,7 @@ public class ModItems {
         addToItemGroup(ModItemGroup.CITRINE, RAW_CITRINE);
         addToItemGroup(ModItemGroup.CITRINE, TIGER_SPAWN_EGG);
         addToItemGroup(ModItemGroup.CITRINE, ANIMATED_ITEM);
+        addToItemGroup(ModItemGroup.CITRINE, ANIMATED_BLOCK_ITEM);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
