@@ -5,12 +5,10 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.entity.ModEntities;
+import net.kaupenjoe.tutorialmod.item.custom.AmethystArmorItem;
 import net.kaupenjoe.tutorialmod.item.custom.AnimatedBlockItem;
 import net.kaupenjoe.tutorialmod.item.custom.AnimatedItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -31,6 +29,15 @@ public class ModItems {
     public static final Item ANIMATED_BLOCK_ITEM = registerItem("animated_block",
             new AnimatedBlockItem(ModBlocks.ANIMATED_BLOCK, new FabricItemSettings()));
 
+    public static final Item AMETHYST_HELMET = registerItem("amethyst_helmet",
+            new AmethystArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item AMETHYST_CHESTPLATE = registerItem("amethyst_chestplate",
+            new AmethystArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item AMETHYST_LEGGINGS = registerItem("amethyst_leggings",
+            new AmethystArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item AMETHYST_BOOTS = registerItem("amethyst_boots",
+            new AmethystArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
@@ -44,6 +51,11 @@ public class ModItems {
         addToItemGroup(ModItemGroup.CITRINE, TIGER_SPAWN_EGG);
         addToItemGroup(ModItemGroup.CITRINE, ANIMATED_ITEM);
         addToItemGroup(ModItemGroup.CITRINE, ANIMATED_BLOCK_ITEM);
+
+        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_BOOTS);
+        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_LEGGINGS);
+        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_CHESTPLATE);
+        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_HELMET);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
