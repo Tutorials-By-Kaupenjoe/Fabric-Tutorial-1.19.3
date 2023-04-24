@@ -8,6 +8,7 @@ import net.kaupenjoe.tutorialmod.entity.ModEntities;
 import net.kaupenjoe.tutorialmod.item.custom.AmethystArmorItem;
 import net.kaupenjoe.tutorialmod.item.custom.AnimatedBlockItem;
 import net.kaupenjoe.tutorialmod.item.custom.AnimatedItem;
+import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -38,6 +39,9 @@ public class ModItems {
     public static final Item AMETHYST_BOOTS = registerItem("amethyst_boots",
             new AmethystArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item MUSIC_BOX_MUSIC_DISC = registerItem("music_box_music_disc",
+            new MusicDiscItem(6, ModSounds.MUSIC_BOX, new FabricItemSettings().maxCount(1), 16));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
@@ -56,6 +60,8 @@ public class ModItems {
         addToItemGroup(ModItemGroup.CITRINE, AMETHYST_LEGGINGS);
         addToItemGroup(ModItemGroup.CITRINE, AMETHYST_CHESTPLATE);
         addToItemGroup(ModItemGroup.CITRINE, AMETHYST_HELMET);
+
+        addToItemGroup(ModItemGroup.CITRINE, MUSIC_BOX_MUSIC_DISC);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

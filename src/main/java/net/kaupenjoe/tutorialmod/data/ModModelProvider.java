@@ -40,5 +40,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AMETHYST_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.MUSIC_BOX_MUSIC_DISC, Models.GENERATED);
     }
 }

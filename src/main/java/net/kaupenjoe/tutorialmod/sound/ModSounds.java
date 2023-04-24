@@ -19,6 +19,8 @@ public class ModSounds {
             ModSounds.ANIMATED_BLOCK_BREAK, ModSounds.ANIMATED_BLOCK_WALK, ModSounds.ANIMATED_BLOCK_PLACE,
             ModSounds.ANIMATED_BLOCK_HIT, ModSounds.ANIMATED_BLOCK_WALK);
 
+    public static SoundEvent MUSIC_BOX = registerSoundEvent("music_box");
+
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = new Identifier(TutorialMod.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
