@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.custom.AnimatedBlock;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
+import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.kaupenjoe.tutorialmod.world.tree.RedMapleSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -45,7 +46,7 @@ public class ModBlocks {
             new SaplingBlock(new RedMapleSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
 
     public static final Block ANIMATED_BLOCK = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "animated_block"),
-            new AnimatedBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().nonOpaque()));
+            new AnimatedBlock(FabricBlockSettings.of(Material.STONE).sounds(ModSounds.ANIMATED_BLOCK_SOUNDS).strength(1.0f).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
