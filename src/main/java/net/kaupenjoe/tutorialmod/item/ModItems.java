@@ -46,30 +46,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
 
-    public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.INGREDIENTS, CITRINE);
-        addToItemGroup(ItemGroups.INGREDIENTS, RAW_CITRINE);
-
-        addToItemGroup(ModItemGroup.CITRINE, CITRINE);
-        addToItemGroup(ModItemGroup.CITRINE, RAW_CITRINE);
-        addToItemGroup(ModItemGroup.CITRINE, TIGER_SPAWN_EGG);
-        addToItemGroup(ModItemGroup.CITRINE, ANIMATED_ITEM);
-        addToItemGroup(ModItemGroup.CITRINE, ANIMATED_BLOCK_ITEM);
-
-        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_BOOTS);
-        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_LEGGINGS);
-        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_CHESTPLATE);
-        addToItemGroup(ModItemGroup.CITRINE, AMETHYST_HELMET);
-
-        addToItemGroup(ModItemGroup.CITRINE, MUSIC_BOX_MUSIC_DISC);
-    }
-
-    private static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
     public static void registerModItems() {
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
-
-        addItemsToItemGroup();
     }
 }
